@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>History</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./static/style.css">
+</head>
+<body>
+<center>
+<a href="./User-Home">Back</a>
+<div class="table100-body js-pscroll">
+<table>
+    <thead>
+        <tr class="row100 head">
+        <th class="cell100 column1"><h3><b>name</b></h3></th>
+        <th class="cell100 column2"><h3><b>Cause</b></h3></th>
+        <th class="cell100 column3"><h3><b>Date</b></h3></th>
+        <th class="cell100 column4"><h3><b>Time</b></h3></th>
+        <th class="cell100 column5"><h3><b>Status</b></h3></th>
+        <th class="cell100 column1"><h3><b>Report</b></h3></th>
+        </tr>
+    </thead>
+<tbody>
+    {% for i in rows %}
+<tr class="row100 body">
+<td class="cell100 column1">{{i[0]}}</td>
+<td class="cell100 column2">{{i[1]}}</td>
+<td class="cell100 column3">{{i[2]}}</td>
+<td class="cell100 column4">{{i[3]}}</td>
+<td class="cell100 column5"><b style="color:red;">{{i[5]}}</b></td>
+{% if i[5] != 'Pending'%}
+<form action='./Prescription' method='POST'>
+<td class="cell100 column1"><input type='text' value="{{i[4]}} {{i[1]}} {{i[2]}}" name='id' hidden><input type="Submit" value='Prescription'></td>
+</form>
+{% else %}
+<td class="cell100 column1">-----</td>
+{% endif %}
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</center>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Log in</title>
+<link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+<div id="bg"></div>
+<form action ="./submit" method="POST">
+<center><label><h2>Patient<h2></label></center>
+<div class="form-field">
+<label>Id:{{session['id']}}</label>
+<label>date:{{session['date']}}</label>
+</div>
+<div class="form-field">
+<textarea name="Prescription" rows="4" cols="50" ></textarea>
+ </div>
+<div class="form-field">
+<button class="btn" type="submit">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>

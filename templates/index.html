@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Appointment</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<style>
+.input{
+    display:none;
+}
+</style>
+</head>
+<body>
+<div id="bg"></div>
+
+<center><label>
+    {% with messages = get_flashed_messages() %}  
+{% if messages %}  
+      {% for message in messages %}  
+           <h4 style="color:red" >{{ message }}</h4>  
+      {% endfor %}  
+{% endif %}  
+{% endwith %} 
+    <h2>
+    My Appointment: 
+    <h2></label></center>
+<form action="./login" method="POST" >
+<div class="form-field">
+<input class="input" name="input" value="Doctor">
+<button class="btn" >Doctor Login</button>
+</div>
+</form>
+<form action="./login" method="POST" >
+<div class="form-field">
+<input class="input" name="input" value="User">
+<button class="btn" >Patient Login</button>
+</div>
+</form>
+</div>
+</body>
+</html>

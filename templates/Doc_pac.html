@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Log in</title>
+<link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+<div id="bg"></div>
+<form action ="./Patient_pre" method="POST">
+<a href="./Doctor-Home">Back</a>
+<center><label><h2>Patient List<h2></label></center>
+    <div class="form-field">
+        <select name="Patient">
+            {% for i in pat %}
+            <option value="{{i[1]}} {{i[0]}} {{i[3]}}">{{i[0]}}--{{i[2]}}---{{i[3]}}</option>
+            {%endfor%}
+          </select>
+        </div>
+    <div class="form-field">
+<button class="btn" type="submit">Go to</button>
+</div>
+</form>
+</div>
+</body>
+</html>

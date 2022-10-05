@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>New Booking</title>
+<link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+
+<div id="bg"></div>
+
+<form action ="./process" method="POST">
+<div class="form-field">
+<a href="./User-Home">Back</a>
+</div>
+<center><label><h2>Booking Appointment<h2></label></center>
+<div class="form-field">
+<input type="text" placeholder="Name" name="Name" required />
+</div>
+    <div class="form-field">
+        <select name="category">
+            <option value="Orthopedic">Orthopedic</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Opthamologist">Opthamologist</option>
+            <option value="ENT">ENT</option>   
+            <option value="Dentist">Dentist</option>
+            <option value="Paediatrician">Paediatrician</option>
+            <option value="Neurologist">Neurologist</option>
+            <option value="General Physician">General Physician</option>
+        </select>
+    </div>
+<div class="form-field">
+<input type="date" placeholder="date" name="date" required />
+</div>
+<div class="form-field">
+    <select name="Time">
+        <option value="8:00AM">8:00AM</option>
+        <option value="9:00AM">9:00AM</option>
+        <option value="10:00AM">10:00AM</option>
+        <option value="12:00PM">12:00PM</option>
+        <option value="1:00PM">1:00PM</option>
+        <option value="2:00PM">2:00PM</option>
+        <option value="3:00PM">3:00PM</option>
+      </select>
+</div>
+<div class="form-field">
+<button class="btn" type="submit">Submit</button>
+</div>
+</form>
+</div>
+</body>
+</html>
