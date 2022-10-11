@@ -7,3 +7,19 @@ Even doctors can check their appointments and can write the prescription to the 
 Patient can check their doctor's prescription any time by logging into this web site.
 
 ## My website Link : https://my-appointment.azurewebsites.net/
+
+# Languages or Technologies
+
+-  Html
+
+-  Css
+
+-  Python(flask)
+
+-  Sqlite3
+
+-  Azure wedapp
+
+# Compatibility
+
+ -  Easy to Navigate in Deaktop
