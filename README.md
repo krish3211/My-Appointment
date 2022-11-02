@@ -53,7 +53,7 @@ Patient can check their doctor's prescription any time by logging into this web 
 ![Screenshot (25)](https://user-images.githubusercontent.com/94080969/199453456-47874543-95c7-4e6c-aa04-a4fa559e2bcd.png)
 
 # patient's history page (user)
--  In this page patient see their previous appointment and prescription.
+-  In this page patient see their previous or present appointments and prescriptions.
 ![Screenshot (27)](https://user-images.githubusercontent.com/94080969/199454755-53f5650f-fa07-475c-b1e1-eb3d38769694.png)
 
 # Appointment page(user)
